@@ -1,0 +1,42 @@
+
+.container{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#anti-clockwise{
+    position: relative;
+    animation: clockwise-spin 3000ms ease infinite;
+    left: 10%;
+}
+
+#clockwise{
+    position: relative;
+    left: -44px;
+    animation: anti-clockwise-spin 3000ms ease infinite;
+}
+
+@keyframes clockwise-spin {
+    
+    from{
+        transform: rotate(0turn);
+    }
+
+    to{
+        transform: rotate(1turn);
+    }  
+}
+
+@keyframes anti-clockwise-spin {
+    
+    from{
+        transform: rotate(1turn);
+    }
+
+    to{
+        transform: rotate(0turn);
+    }
+}
